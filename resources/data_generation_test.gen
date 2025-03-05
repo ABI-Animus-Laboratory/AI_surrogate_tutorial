@@ -1,0 +1,35 @@
+{
+	"inputs":{
+		"E1" : [2.0,5.01,0.5],
+		"E2" : [4.0,40.01,6.0],
+		"pc1w" : [-2.0,2.01,0.5],
+		"pc2w" : [-2.0,2.01,0.5],
+		"pressure_density" : 10,
+		"point_density" : 5
+		},
+	"outputs":{
+		"path" : "../resources/train_0/",
+		"filename" : "training_data"
+	},
+	"training":{
+		"training_ID" : "dual-stiffness",
+		"epochs" : 500,
+		"batch_size" : 4096,
+		"learning_rate" : 0.01,
+		"weights" : [0.1,0.45,0.45],
+		"decay_per_epoch" : 0.985,
+	    "condition_BN" : [true,false,false],
+    	"values_BN" : [0.0,0.0,0.0],
+	    "condition_BD" : [true,false,false],
+	    "values_BD" : [50,25],
+	    "samples_per_file" : 11080,
+	    "testing_ratio" : 0.1,
+	    "labels" : ["x","y","z","E1","E2","P","PCA_1","PCA_2","dx","dy","dz"],
+	    "path" : "../resources/trained_models/test/"
+	},
+	"network":{
+	    "inputs" : 8,
+	    "outputs" : 3,
+		"neurons_ann" : [64,64,64,1]
+	}
+}
