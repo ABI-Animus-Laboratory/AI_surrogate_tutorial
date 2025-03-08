@@ -47,7 +47,7 @@ if __name__ == '__main__':
     print("Mean absolute global error {}, mean displacement {}, max displacement {}".format(error, mean_displacement, max_displacement) )
     
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection = '3d')
     ax.quiver(x_val, y_val, z_val*1.1, dx_val, dy_val, dz_val, length=1.0, normalize=False, color='red', label='Ground truth')
     ax.quiver(x_val, y_val, z_val, dx_pred, dy_pred, dz_pred, length=1.0, normalize=False, color='blue', label='Prediction')
     ax.set_ylabel(r'$x$')
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     plt.show()
 
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection = '3d')
     ax.quiver(x_val, y_val, z_val, dx_pred, dy_pred, dz_pred, length=1.0, normalize=False, color='blue',
               label='Prediction')
     ax.set_ylabel(r'$x$')
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     plt.show()
 
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection = '3d')
     ax.quiver(x_val, y_val, z_val, dx_val-dx_pred, dy_val-dy_pred, dz_val-dz_pred, length=1.0, normalize=False, color='red',
               label='Difference GT w.r.t. prediction')
     ax.set_ylabel(r'$x$')

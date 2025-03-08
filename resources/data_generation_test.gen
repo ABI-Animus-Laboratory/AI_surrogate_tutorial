@@ -8,7 +8,7 @@
 		"point_density" : 5
 		},
 	"outputs":{
-		"path" : "../resources/train_0/",
+		"path" : "./resources/train_0/",
 		"filename" : "training_data"
 	},
 	"training":{
@@ -25,7 +25,7 @@
 	    "samples_per_file" : 11080,
 	    "testing_ratio" : 0.1,
 	    "labels" : ["x","y","z","E1","E2","P","PCA_1","PCA_2","dx","dy","dz"],
-	    "path" : "../resources/trained_models/test/"
+	    "path" : "./resources/trained_models/test/"
 	},
 	"network":{
 	    "inputs" : 8,
