@@ -2,11 +2,14 @@
 
 ## Environment setup
 
-Create and activate a virtual environment in your tutorial folder:
+Create a virtual environment in your tutorial folder:
 ```
 cd <tutorial_folder>
 python -m venv surrogate_venv
-source surrogate_venv/bin/activate
+```
+Activate the virtual environment (each time you run the tutorial, you must have the virtual environment activated)
+```
+source <tutorial_folder>/surrogate_venv/bin/activate
 ```
 
 ## Tutorial setup
