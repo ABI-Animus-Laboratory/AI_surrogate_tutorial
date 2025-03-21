@@ -1,6 +1,8 @@
 '''
 Created on 10/08/2020
 
+How to execute: python run_parameter_estimation.py <surrogate_file.gen> <observation_file.csv>
+
 @author: Gonzalo D. Maso Talou
 '''
 
