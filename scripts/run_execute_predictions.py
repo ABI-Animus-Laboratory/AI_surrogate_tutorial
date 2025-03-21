@@ -1,6 +1,8 @@
 '''
 Created on 18/03/2021
 
+How to execute: python run_execute_predictions.py <surrogate_file.gen> <observation_file.csv>
+
 @author: Gonzalo D. Maso Talou
 '''
 
