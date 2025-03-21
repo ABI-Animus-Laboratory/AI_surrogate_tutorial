@@ -4,6 +4,8 @@ Modified on 05/03/2025
 
 @summary: Training script of an AI-surrogate model using an MLP architecture and BC constraints.
 
+How to execute: python run_learn_model.py <configuration_file.gen>
+
 @author: Gonzalo D. Maso Talou
 '''
 
@@ -200,4 +202,4 @@ if __name__ == '__main__':
     tensorboard_log.on_train_end('_')  
 
     #    Save the best surrogate model candidate
-    surrogate_model.save(output_path+"saved_model_final", save_format="tf")    
+    # surrogate_model.save(output_path+"saved_model_final", save_format="tf")    
